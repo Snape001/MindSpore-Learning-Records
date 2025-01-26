@@ -1,0 +1,17 @@
+微调任务描述：
+	使用MindNLP组件对Roberta-Large模型进行IA3微调训练，数据集:GLUE-MRPC
+	使用MindSpore NLP组件加载Roberta-Large模型， 设置IA3算法配置并初始化微调模型，加载数据
+
+Software Environment / 软件环境 (Mandatory):
+	-mindspore_2.3.0
+	-py_3.9
+	-MindNLP_0.4.1
+
+ia3.ipynb：昇思大模型平台AI实验室-Ascend
+	微调并训练模型
+	规格：1*ascend-snt9|ARM: 24核96GB
+	镜像：python3.9-ms2.3.0-cann8.0.RC2.beta1
+
+app.ipynb：本地
+	部署gradio，推理任务
+	前置准备：gradio库、mindspore、mindnlp套件、Roberta-Large预训练大模型及微调参数
